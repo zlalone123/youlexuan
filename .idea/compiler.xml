@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="youlexuan-manager-web" />
+        <module name="youlexuan-sellergoods-service" />
+        <module name="youlexuan-pojo" />
+        <module name="youlexuan-common" />
+        <module name="youlexuan_content_interface" />
+        <module name="youlexuan-cat-service" />
+        <module name="youlexuan-page-web" />
+        <module name="youlexuan-user-interface" />
+        <module name="youlexuan-shop-web" />
+        <module name="youlexuan-search-web" />
+        <module name="youlexuan-search-service" />
+        <module name="youlexuan-dao" />
+        <module name="youlexuan-page-interface" />
+        <module name="youlexuan-cat-interface" />
+        <module name="youlexuan-user-service" />
+        <module name="youlexuan-cat-web" />
+        <module name="youlexuan-page-service" />
+        <module name="youlexuan-user-web" />
+        <module name="youlexuan-sellergoods-interface" />
+        <module name="youlexuan-solr-util" />
+        <module name="youlexuan_content_service" />
+        <module name="youlexuan-portal-web" />
+        <module name="youlexuan-search-interface" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
