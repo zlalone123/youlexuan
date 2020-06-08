@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47d3ad5e-ea48-4821-bda6-050a2be90266" name="Default Changelist" comment="首次提交项目">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/youlexuan-cat-interface/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/youlexuan-cat-interface/src/main/java/com/zl/cart/service/CatService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/youlexuan-cat-interface/target/classes/com/zl/cart/service/CatService.class" afterDir="false" />
@@ -2733,56 +2727,6 @@
       <change afterPath="$PROJECT_DIR$/youlexuan-page-web/target/youlexuan-page-web/plugins/sui/sui-append.min.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/youlexuan-page-web/target/youlexuan-page-web/plugins/sui/sui.min.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/youlexuan-page-web/target/youlexuan-page-web/plugins/sui/sui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/entity/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/entity/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/group/CartVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/group/GoodsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/group/SpecificationVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbAddressExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbAreas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbAreasExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbBrandExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbCities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbCitiesExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbContentCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbContentCategoryExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbContentExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbFreightTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbFreightTemplateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbGoodsDesc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbGoodsDescExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbGoodsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbItemCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbItemCatExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbItemExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbOrderExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbOrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbOrderItemExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbPayLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbPayLogExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbProvinces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbProvincesExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSeckillGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSeckillGoodsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSeckillOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSeckillOrderExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSeller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSellerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSpecificationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSpecificationOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbSpecificationOptionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbTypeTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbTypeTemplateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youlexuan-pojo/src/main/java/com/zl/pojo/TbUserExample.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/youlexuan-pojo/target/classes/com/zl/entity/PageResult.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/youlexuan-pojo/target/classes/com/zl/entity/Result.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/youlexuan-pojo/target/classes/com/zl/group/CartVO.class" afterDir="false" />
@@ -8115,12 +8059,20 @@
       <workItem from="1590993402969" duration="432000" />
       <workItem from="1591068150944" duration="4786000" />
       <workItem from="1591075615445" duration="78693000" />
-      <workItem from="1591595286403" duration="2258000" />
+      <workItem from="1591595286403" duration="2782000" />
     </task>
+    <task id="LOCAL-00001" summary="首次提交项目">
+      <created>1591600031036</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591600031036</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="495748000" />
+    <option name="totallyTimeSpent" value="496272000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -8153,7 +8105,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.33169934" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.33060557" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3289689" />
