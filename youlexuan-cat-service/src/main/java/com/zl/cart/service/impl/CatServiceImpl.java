@@ -7,15 +7,20 @@ import com.zl.mapper.TbItemMapper;
 import com.zl.pojo.TbItem;
 import com.zl.pojo.TbOrderItem;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Service
 public class CatServiceImpl implements CatService {
     @Autowired
     private TbItemMapper itemMapper;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @Override
     public List<CartVO> addGoodsToCartList(List<CartVO> cartList, Long itemId, Integer num) {
@@ -70,6 +75,32 @@ public class CatServiceImpl implements CatService {
             }
         }
         return cartList;
+    }
+
+    /**
+     * 从redis中获取商品
+     * @param username
+     * @return
+     */
+    @Override
+    public List<CartVO> findCartListFromRedis(String username) {
+        System.out.println("从redis中提取购物车数据....."+username);
+        List<CartVO> cartList = (List<CartVO>) redisTemplate.boundHashOps("cartList").get(username);
+        if(cartList==null){
+            cartList=new ArrayList();
+        }
+        return cartList;
+    }
+
+    /**
+     * 添加购物车到Redis中
+     * @param username
+     * @param cartList
+     */
+    @Override
+    public void saveCartListToRedis(String username, List<CartVO> cartList) {
+        System.out.println("向redis存入购物车数据....."+username);
+        redisTemplate.boundHashOps("cartList").put(username, cartList);
     }
 
 
@@ -134,6 +165,19 @@ public class CatServiceImpl implements CatService {
         orderItem.setTotalFee(new BigDecimal(item.getPrice().doubleValue() * num));
         return orderItem;
     }
+
+    @Override
+    public List<CartVO> mergeCartList(List<CartVO> cartList1, List<CartVO> cartList2) {
+        System.out.println("合并购物车");
+        for(CartVO cart: cartList2){
+            for(TbOrderItem orderItem:cart.getOrderItemList()){
+                cartList1=addGoodsToCartList(cartList1,orderItem.getItemId(),orderItem.getNum());
+            }
+        }
+        return cartList1;
+    }
+
+
 }
 
 

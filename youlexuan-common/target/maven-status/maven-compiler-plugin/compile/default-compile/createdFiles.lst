@@ -1,4 +1,5 @@
-com\zl\utils\PhoneFormatCheckUtils.class
+com\zl\utils\IdWorker.class
 com\zl\utils\FastDFSClient.class
 com\zl\utils\SendSmsUtil.class
+com\zl\utils\PhoneFormatCheckUtils.class
 com\zl\utils\CookieUtil.class

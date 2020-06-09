@@ -108,6 +108,11 @@
             <artifactId>youlexuan-cat-interface</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.zl</groupId>
+            <artifactId>youlexuan-common</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -151,6 +151,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-client</artifactId>
@@ -167,6 +168,24 @@
             <artifactId>youlexuan-common</artifactId>
             <version>1.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.zl</groupId>
+            <artifactId>youlexuan-user-interface</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zl</groupId>
+            <artifactId>youlexuan-order-interface</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zl</groupId>
+            <artifactId>youlexuan-pay-interface</artifactId>
+            <version>1.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>

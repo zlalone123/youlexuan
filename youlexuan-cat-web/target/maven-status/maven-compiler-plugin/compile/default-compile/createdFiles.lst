@@ -1,2 +1,5 @@
+com\zl\cart\controller\AddressController.class
 com\zl\service\UserDetailServiceImpl.class
+com\zl\cart\controller\PayController.class
 com\zl\cart\controller\CartController.class
+com\zl\cart\controller\OrderController.class
