@@ -57,5 +57,6 @@ public interface OrderService {
 	 * @return
 	 */
 	public PageResult findPage(TbOrder order, int pageNum, int pageSize);
-	
+
+    void updateOrderStatus(String out_trade_no, String transaction_id);
 }

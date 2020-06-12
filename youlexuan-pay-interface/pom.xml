@@ -11,5 +11,13 @@
 
     <artifactId>youlexuan-pay-interface</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.zl</groupId>
+            <artifactId>youlexuan-pojo</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

@@ -8,7 +8,9 @@ import com.alipay.api.request.AlipayTradeQueryRequest;
 import com.alipay.api.response.AlipayTradePrecreateResponse;
 import com.alipay.api.response.AlipayTradeQueryResponse;
 import com.zl.pay.service.AliPayService;
+import com.zl.pojo.TbPayLog;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,6 +20,9 @@ public class AliPayServiceImpl implements AliPayService {
 
     @Autowired
     private AlipayClient alipayClient;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
 
     @Override
@@ -50,12 +55,12 @@ public class AliPayServiceImpl implements AliPayService {
                 //生成二维码的value
                 map.put("qrcode", response.getQrCode());
 
-                //交易流水单号
+                //支付订单号
                 map.put("out_trade_no", response.getOutTradeNo());
 
                 //总金额
-                map.put("total_fee", total_fee+"");
-                map.put("code",code);
+                map.put("total_fee", total_fee + "");
+                map.put("code", code);
                 System.out.println("qrcode:" + response.getQrCode());
                 System.out.println("out_trade_no:" + response.getOutTradeNo());
                 System.out.println("total_fee:" + total_fee);
@@ -74,29 +79,30 @@ public class AliPayServiceImpl implements AliPayService {
     /**
      * 交易查询接口alipay.trade.query：
      * 获取指定订单编号的，交易状态
+     *
      * @throws AlipayApiException
      */
     @Override
     public Map queryPayStatus(String out_trade_no) {
-        Map<String,String> map=new HashMap<String, String>();
+        Map<String, String> map = new HashMap<String, String>();
 
         //根据支付单号查询支付状态
         AlipayTradeQueryRequest request = new AlipayTradeQueryRequest();
         request.setBizContent("{" +
-                "    \"out_trade_no\":\""+out_trade_no+"\"," +
+                "    \"out_trade_no\":\"" + out_trade_no + "\"," +
                 "    \"trade_no\":\"\"}"); //设置业务参数
 
         //发出请求
         try {
             AlipayTradeQueryResponse response = alipayClient.execute(request);
-            String code=response.getCode();
-            System.out.println("返回值1:"+response.getBody());
+            String code = response.getCode();
+            System.out.println("返回值1:" + response.getBody());
 
-            if(code.equals("10000")){
+            if (code.equals("10000")) {
 
                 map.put("out_trade_no", out_trade_no);
                 map.put("tradestatus", response.getTradeStatus());
-                map.put("trade_no",response.getTradeNo());//支付宝28位交易号
+                map.put("trade_no", response.getTradeNo());//支付宝28位交易号
             }
         } catch (AlipayApiException e) {
             e.printStackTrace();
@@ -104,6 +110,16 @@ public class AliPayServiceImpl implements AliPayService {
         return map;
     }
 
+    /**
+     * 从Redis中获取支付日志
+     *
+     * @param userId
+     * @return
+     */
+    @Override
+    public TbPayLog searchPayLogFromRedis(String userId) {
 
+        return (TbPayLog) redisTemplate.boundHashOps("payLog").get(userId);
+    }
 }
 

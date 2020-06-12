@@ -35,6 +35,6 @@ app.service("cartService",function ($http) {
 
     //保存订单
     this.submitOrder=function(order){
-        return $http.post('order/add.do',order);
+        return $http.post('../order/add.do',order);
     }
 })

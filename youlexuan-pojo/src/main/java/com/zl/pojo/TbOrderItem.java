@@ -10,7 +10,7 @@ public class TbOrderItem implements Serializable {
 
     private Long goodsId;
 
-    private Long orderId;
+    private String orderId;
 
     private String title;
 
@@ -50,11 +50,11 @@ public class TbOrderItem implements Serializable {
         this.goodsId = goodsId;
     }
 
-    public Long getOrderId() {
+    public String getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(Long orderId) {
+    public void setOrderId(String orderId) {
         this.orderId = orderId;
     }
 

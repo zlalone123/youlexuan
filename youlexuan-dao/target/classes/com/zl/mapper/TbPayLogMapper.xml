@@ -5,7 +5,7 @@
     <id column="out_trade_no" property="outTradeNo" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     <result column="pay_time" property="payTime" jdbcType="TIMESTAMP" />
-    <result column="total_fee" property="totalFee" jdbcType="BIGINT" />
+    <result column="total_fee" property="totalFee" jdbcType="DECIMAL" />
     <result column="user_id" property="userId" jdbcType="VARCHAR" />
     <result column="transaction_id" property="transactionId" jdbcType="VARCHAR" />
     <result column="trade_state" property="tradeState" jdbcType="VARCHAR" />

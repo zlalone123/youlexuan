@@ -1,5 +1,7 @@
 package com.zl.pay.service;
 
+import com.zl.pojo.TbPayLog;
+
 import java.util.Map;
 
 public interface AliPayService {
@@ -16,4 +18,6 @@ public interface AliPayService {
      * @param out_trade_no
      */
     public Map queryPayStatus(String out_trade_no);
+
+    TbPayLog searchPayLogFromRedis(String name);
 }

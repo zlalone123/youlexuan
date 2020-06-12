@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.zl.mapper.TbOrderMapper" >
   <resultMap id="BaseResultMap" type="com.zl.pojo.TbOrder" >
-    <id column="order_id" property="orderId" jdbcType="BIGINT" />
+    <id column="order_id" property="orderId" jdbcType="VARCHAR" />
     <result column="payment" property="payment" jdbcType="DECIMAL" />
     <result column="payment_type" property="paymentType" jdbcType="VARCHAR" />
     <result column="post_fee" property="postFee" jdbcType="VARCHAR" />
